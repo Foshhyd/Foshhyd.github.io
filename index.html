@@ -35,7 +35,8 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
+							<li class="active"><a href="index.html">3D and 2D Projects</a></li>
+							<li><a href="VRProjects.html">VR and AR Projects</a></li>
 							<li><a href="resume.html">Resume</a></li>
 						</ul>
 						<ul class="icons">
@@ -47,26 +48,49 @@
 
 				<!-- Main -->
 					<div id="main">
+<!-- Lightbox container -->
+<div id="lightbox" onclick="closeLightbox()">
+	<img id="lightbox-img">
+</div>
 
+<script>
+function openLightbox(img) {
+	document.getElementById("lightbox").style.display = "flex";
+	document.getElementById("lightbox-img").src = img.src;
+}
+function closeLightbox() {
+	document.getElementById("lightbox").style.display = "none";
+}
+</script>
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
 									<span class="date"></span>
-									<h2>AR fitness app(Unity C#)<br />
+									<h2>Shackled Shadow(Monogame C# Platformer Game)<br />
 									</a></h2>
-									<p>AR Fitness app is a workout app that can be used to learn the exercises with help of AR and
-										 view it in real world further the exercises are verified by the AI pose estimation.</p>
-										 <p>Going to be released in Play Store and App Store soon.</p>
 								</header>
-								<a href="#" class="image main"><img src="images/ARFitness.jpg" alt="" /></a>
-								<p>I worked on the AR part of the app made in Unity with a team some of the tasks include</p>
-								<li>AR app UI to navigate different exercises</li>
-								<li>Animation system to implement 3d models movement.</li>
-								<li>Designing clothes and models required for the app in blender and marvelous designer.</li>
-								<li>Integrating the AR app by exporting it into Android Studio as a gradle project.</li>
+								<div class="row">
+  									<div class="column">
+    									</a><img src="images/CGA1.png" style="width:100%" onclick="openLightbox(this)">
+  									</div>
+  									<div class="column">
+    									</a><img src="images/CGA2.png" style="width:100%" onclick="openLightbox(this)">
+ 									 </div>
+								</div>
+								<a class="image main"><img src="images/CGA3.png" alt="" onclick="openLightbox(this)" /></a>
+									<p>You are a shadow who escaped the owner looking for freedom. Your former owner is chasing you down and you must avoid him. 
+										The game features two different worlds i.e., Shadow world and Real world. Travel between two worlds solving puzzles, fighting enemies with your powers. Explore the world and find your freedom
+									</p>
+								<p>I am the sole developer and designer of this game made with monogame as part of the coursework. The game was built from scratch hence many game managers and systems needed to be coded they include</p>
+								<li>Start and End screen with recording high scores, level restart etc.</li>
+								<li>A innovative game mechanic where art switches(switching world) when a power up is used.</li>
+								<li>Level design extracted from txt files(You can modify the txt file and player, enemy or tile positions can be changed)</li>
+								<li>Power up drops with 2 variations.</li>
+								<li>Enemy movement and finite state machines.</li>
+								<li>Input listeners, score managers.</li>
 								<ul class="actions special">
-									<li><a href="https://github.com/Foshhyd/AR-Fitness-app" target="_blank" class="button large">View Project</a></li>
-								</ul>
+										<li><a href="https://github.com/Foshhyd/ShackledShadow" target="_blank" class="button">View Project</a></li>
+									</ul>
 							</article>
 
 						<!-- Posts -->
@@ -74,10 +98,92 @@
 								<article>
 									<header>
 										<span class="date"></span>
+										<h2>Planet Clearance(C++ Game plus custom engine)<br />
+										</a></h2>
+									</header>
+									<div class="row">
+  									<div class="column">
+    									</a><img src="images/AGT2.png" style="width:100%" onclick="openLightbox(this)">
+  									</div>
+  									<div class="column">
+    									</a><img src="images/AGT3.png" style="width:100%" onclick="openLightbox(this)">
+ 									 </div>
+								</div>
+								<a class="image main"><img src="images/AGT1.png" alt="" onclick="openLightbox(this)" /></a>
+									<p>Third person shooter- Humanity is extending its power over the galaxy and starts conquering other planets inhabited by aliens. You are a space agent who is assigned the task of cleaning the planet for humans to relocate. 
+										You land on a planet where aliens are hidden and have the power to teleport. This planet also has valuable gemstones that help humans to kill aliens of this planet.
+									</p>
+								<p>I am the sole developer and designer of this game made with a custom game engine as part of the coursework. The game and the engine was built on a basic template items that I coded include</p>
+								<li>Game intro screen using a quad constructed with OpenGL</li>
+								<li>A primitive tetrahedron object made with C++ and OpenGL from scratch with computed vertices, normals and tex co-ordinates</li>
+								<li>Use of audio files using a FMod file manager</li>
+								<li>A 3rd person camera motion that tracks player. Powerups.</li>
+								<li>Special effects like fog, crossfade, explosion, UI elements</li>
+								<li>NPC finite state machine with 4 different states.</li>
+								<li>Input listeners, score managers.</li>
+								<ul class="actions special">
+										<li><a href="https://github.com/Foshhyd/PlanetClearance" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>OpenGL engine and a basic game(C++ VS project with game)<br />
+										</a></h2>
+									</header>
+									<div class="row">
+  									<div class="column">
+    									</a><img src="images/CG2.png" style="width:100%" onclick="openLightbox(this)">
+  									</div>
+  									<div class="column">
+    									</a><img src="images/CG3.png" style="width:100%" onclick="openLightbox(this)">
+ 									 </div>
+								</div>
+								<a class="image main"><img src="images/CG1.png" alt="" onclick="openLightbox(this)" /></a>
+									<p>Completely custom OpenGL engine with custom shaders, and a 3D submarine game where the player needs to collect gems in an underwater track. These pickups give player points. 
+									</p>
+								<p>I am the sole developer and designer of this game made with a custom game engine as part of the coursework. features include</p>
+								<li>A 3D non linear path was created using Catmull Rom.</li>
+								<li>A primitive tetrahedron and cylinder object made with C++ and OpenGL from scratch with computed vertices, normals and tex co-ordinates</li>
+								<li>Directional light and spotlight with custom shaders.</li>
+								<li>Advanced rendering techniques- Reflect and refract shaders, A Toon shader, Emissive shader, A blue tint shader made with Frame buffer objects.</li>
+								<ul class="actions special">
+										<li><a href="https://github.com/Foshhyd/TidalGame" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>Deception(Unreal engine, C++)<br />
+										</a></h2>
+									</header>
+									<div class="row">
+  									<div class="column">
+    									</a><img src="images/GDP2.png" style="width:100%" onclick="openLightbox(this)">
+  									</div>
+  									<div class="column">
+    									</a><img src="images/GDP3.png" style="width:100%" onclick="openLightbox(this)">
+ 									 </div>
+								</div>
+								<a class="image main"><img src="images/GDP1.png" alt="" onclick="openLightbox(this)" /></a>
+									<p>Deception is a game about the psyche behind people’s lies. 
+										As a robot, you are given the task to explore the environments they live in. Interacting with various storylines and influencing the main story. In a way, you can write your own story with all the intriguing elements built in for you. 
+									</p>
+								<p>I am the sole developer of this game using unreal marketplace 3D assets features include</p>
+								<li>A dynamic conversation system using data table and blueprints. The dialogue changes depending on player choices and the story path changes.</li>
+								<li>Fast travel between different locations on the map. A sequence that implements a custom cinematic camera animation.</li>
+								<li>A mission system that uses collision detection and updates player goals.</li>
+								<ul class="actions special">
+										<li><a href="https://github.com/Foshhyd/Deception" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
 										<h2>Dimentional crack(Unity C#)<br />
 										</a></h2>
 									</header>
-									<a class="image main"><img src="images/pic01.png" alt="" /></a>
+									<a class="image main"><img src="images/pic01.png" alt="" onclick="openLightbox(this)" /></a>
 									<p>A Action-Adventure mobile game where a crack of reality is in the middle of room which leads to many versions
 										of the room with other dimention aliens constantly attacking you to not fill the crack. Solve the puzzles and close the crack before realities merge.
 									</p>
@@ -92,47 +198,10 @@
 								<article>
 									<header>
 										<span class="date"></span>
-										<h2>Spark Learning(Unity C#)<br />
-										An incubation of VIT-AP</a></h2>
-									</header>
-									<!--<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>-->
-									<p>A AR app to learn concepts in a gamified interactive manner and understand concepts better while having fun.
-									</p>
-								<p>I am the Head of technical team of this app made in Unity I organise the team assign tasks and help with the both programming and design. Some of the features implemented</p>
-								<li>A interactive 3d model of the Periodic table to understand all the elements </li>
-								<li>Using the interactive model to tap and see all the related information about the element.</li>
-								<li>Envisioning the ideas and guiding the design team to create 3d models.</li>
-								<li>Using Vuforia Engine for AR to get a better cross platform support.</li>
-									<ul class="actions special">
-										<li><a href="https://github.com/SparkLearning/Project1" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date"></span>
-										<h2>Versuch(Unreal C++)<br />
-										I am the writer, lead programmer and desginer of the game.</a></h2>
-									</header>
-									<!--<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>-->
-									<p>A Open World PC game setup in late 1930s about a island being invaded by a unknown organization trying to experiment on people of the city
-									with technology far too advanced. Player is citizen of this city who is not participating in the war to take care of his ill father. Find out what is going in the city.
-									</p>
-								<p>I am working with a team for this game made in Unreal with custom 3d assets some features at present which I contributed include</p>
-								<li>Player movements and animation with animation state machines.</li>
-								<li>Inventory system and weapon pick up system.</li>
-								<li>Auto landscape material on a terrain made in Gaea.</li>
-								<li>Clothes made in marvelous designer and some streets with surrondings.</li>
-									<ul class="actions special">
-										<li><a href="https://github.com/Foshhyd/Versuch" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date"></span>
 										<h2>Simple Shooter(Unreal C++)<br />
 										I made this game while learning unreal with the Udmey course</a></h2>
 									</header>
-									<a class="image fit"><img src="images/SS.jpg" alt="" /></a>
+									<a class="image main"><img src="images/SS.jpg" alt="" onclick="openLightbox(this)" /></a>
 									<p>A mini project part of Udemy certification. The main aspects learned.</p>
 									<li>Enemy AI behavior trees and blackboard to follow and attack the player when in visible distance.</li>
 									<li>Player and shooting game mechanics.</li>

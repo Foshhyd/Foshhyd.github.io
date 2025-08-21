@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sai Srikar Chirumarri Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Sai Srikar Chirumarri<br />
+						Portfolio</h1>
+						<p>Game Developer and Designer.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Sai Srikar Chirumarri</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">3D and 2D Projects</a></li>
+							<li class="active"><a href="VRProjects.html">VR and AR Projects</a></li>
+							<li><a href="resume.html">Resume</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/sai-srikar-chirumarri-0444a824b/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Foshhyd" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+<!-- Lightbox container -->
+<div id="lightbox" onclick="closeLightbox()">
+	<img id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(img) {
+	document.getElementById("lightbox").style.display = "flex";
+	document.getElementById("lightbox-img").src = img.src;
+}
+function closeLightbox() {
+	document.getElementById("lightbox").style.display = "none";
+}
+</script>
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date"></span>
+									<h2>The Buckerberg Files(Unity C# VR Game)<br />
+									</a></h2>
+								</header>
+								<div class="row">
+  									<div class="column">
+    									</a><img src="images/VR1.png" style="width:100%" onclick="openLightbox(this)">
+  									</div>
+  									<div class="column">
+    									</a><img src="images/VR3.png" style="width:100%" onclick="openLightbox(this)">
+ 									 </div>
+								</div>
+								<a class="image main"><img src="images/VR2.png" alt="" onclick="openLightbox(this)" /></a>
+									<p>A provocative and immersive VR experience set in a future where data privacy has become a core human right. Users step into the scales
+										of a mysterious lizard-like creature. You journey into the abandoned HQ explore, solve puzzles and uncover the truths behind the company.
+									</p>
+								<p>I am the Gameplay programmer and level designer of this game made in Unity where I worked in a team of 5. The tasks and features I implemented include</p>
+								<li>VR player setup(VR hands, player body) and environment interactions(pockets, breaking glass, scanning keycard, injections, doors.</li>
+								<li>Environmental sounds, interaction sounds.</li>
+								<li>Haptics when interacting with objects, scooter etc.</li>
+								<li>VR UI(Start menu, Endscreen)</li>
+								<li>Different game paths implementation(Player ending choices)</li>
+								<ul class="actions special">
+										<li><a href="https://github.com/CarmenPreece/vr-development-project" target="_blank" class="button">View Project</a></li>
+										<li><a href="images/VRGame_Report.pdf" target="_blank" class="button">Download Brief Game Report</a></li>
+									</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>Dynamic NPC System(Unreal C++, Blueprints)[WIP]<br />
+										</a></h2>
+									</header>
+									<p>Virtual Reality games prioritize immersion and the player’s interactions with the world around them (Hand Physics, immersive object interaction, etc.) But they are behind in the 
+										field of Non player characters (NPCs) and interactions between the player and NPCs. The NPCs are often unresponsive 3D models.
+										</p>
+										<p>The project aim is to improve immersion in VR games by designing NPCs that react realistically to physical touch interactions. 
+									</p>
+								<p>I am the sole developer of the project made in Unreal as part of my masters dissertation. The tasks and features I implemented include</p>
+								<li>VR player setup(VR hands) and NPC AI with Blackboard and Behaviour tree</li>
+								<li>A custom collision system that detects NPC body part and touch intensity</li>
+								<li>A finite state machine that uses the new collision system with different behaviour modes(Aggresive, friendly)</li>
+								<li>Physics based animation that moves the bones using the new collision system and ragdoll physics.</li>
+								<li>This dynamic system is designed to act as a plugin.</li>
+								<li>A demo level that features the usage of all the different features [WIP]</li>
+								<ul class="actions special">
+										<li><a href="https://github.com/Foshhyd/Dynamic-NPC" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>AR fitness app(Unity C#)<br />
+										</a></h2>
+									</header>
+									<a class="image main"><img src="images/ARFitness.jpg" alt="" onclick="openLightbox(this)" /></a>
+									<p>AR Fitness app is a workout app that can be used to learn the exercises with help of AR and
+										 view it in real world further the exercises are verified by the AI pose estimation.
+									</p>
+								<p>I worked on the AR part of the app made in Unity with a team some of the tasks include</p>
+								<li>AR app UI to navigate different exercises</li>
+								<li>Animation system to implement 3d models movement.</li>
+								<li>Designing clothes and models required for the app in blender and marvelous designer.</li>
+								<li>Integrating the AR app by exporting it into Android Studio as a gradle project.</li>
+								<ul class="actions special">
+									<li><a href="https://github.com/Foshhyd/AR-Fitness-app" target="_blank" class="button large">View Project</a></li>
+								</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>Spark Learning(Unity C#)<br />
+										An incubation of VIT-AP</a></h2>
+									</header>
+									<!--<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>-->
+									<p>A AR app to learn concepts in a gamified interactive manner and understand concepts better while having fun.
+									</p>
+								<p>I am the Head of technical team of this app made in Unity I organise the team assign tasks and help with the both programming and design. Some of the features implemented</p>
+								<li>A interactive 3d model of the Periodic table to understand all the elements </li>
+								<li>Using the interactive model to tap and see all the related information about the element.</li>
+								<li>Envisioning the ideas and guiding the design team to create 3d models.</li>
+								<li>Using Vuforia Engine for AR to get a better cross platform support.</li>
+									<ul class="actions special">
+										<li><a href="https://github.com/SparkLearning/Project1" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+							</section>
+
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="#" class="page active">1</a>
+									<!--<a href="#" class="page">2</a>
+									<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
+									<a href="#" class="next">Next</a>-->
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3></h3>
+								<p><br />
+								</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a>+91 6302355068</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:saisrikar2512@gmail.com">saisrikar2512@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/sai-srikar-chirumarri-0444a824b/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/Foshhyd" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Sai Srikar Chirumarri</li><!--<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>--></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
