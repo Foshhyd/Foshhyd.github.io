@@ -70,12 +70,22 @@
       <p>As the primary engineer, I develop Arievo&rsquo;s React Native/Expo fitness app: workout logging, partner matching, and live group and social features, written in TypeScript on a Supabase and PostgreSQL backend.</p>
       <ul class="tech-list" aria-label="Technologies"><li>React Native</li><li>Expo</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>Edge Functions</li><li>Python</li></ul>
       <ul class="project-points">
-        <li><strong>Offline workout logging:</strong> sets can be logged without a connection. Each change goes into a persistent operation queue and is replayed in order on reconnection, and realtime updates recover once the device is back online.</li>
-        <li><strong>Data access at the database layer:</strong> Supabase authentication plus PostgreSQL row-level security policies, so access to workout data is enforced by the database rather than trusted to the client.</li>
-        <li><strong>Server-enforced moderation:</strong> content approvals run in Supabase Edge Functions and a Python service, checked against both the user and the submitted content.</li>
-        <li><strong>Releases:</strong> integrated push-notification workflows and distribute iOS and Android beta builds through TestFlight and Google Play testing.</li>
+        <li><strong>Offline workout logging:</strong> built a persistent operation queue with ordered replay and realtime recovery after reconnection.</li>
+        <li><strong>Secure social features:</strong> implemented database access policies and server-enforced content moderation.</li>
+        <li><strong>iOS &amp; Android beta:</strong> integrated push notifications and distributed builds through TestFlight and Google Play testing.</li>
       </ul>
-      <ul class="actions special project-actions"><li><a href="https://arievoapp.github.io/" class="button" target="_blank" rel="noopener noreferrer">Arievo website</a></li><li><a href="resume.html#experience" class="button">Full experience</a></li></ul>
+      <div class="app-screenshots" aria-label="Arievo application screenshots">
+        <figure>
+          <a href="images/screenshots/arievo-workout-light.png" data-lightbox><img src="images/screenshots/arievo-workout-light.png" alt="Arievo workout dashboard in light mode, displaying synthetic workout history" width="860" height="1864" loading="lazy" decoding="async" /></a>
+          <figcaption>Workout dashboard &middot; light mode</figcaption>
+        </figure>
+        <figure>
+          <a href="images/screenshots/arievo-profile-dark.png" data-lightbox><img src="images/screenshots/arievo-profile-dark.png" alt="Arievo profile and friends in dark mode, displaying fictional demo accounts" width="860" height="1864" loading="lazy" decoding="async" /></a>
+          <figcaption>Profile &amp; friends &middot; dark mode</figcaption>
+        </figure>
+      </div>
+      <p class="screenshot-note">Local web previews of the app UI with synthetic demo data. Select an image to enlarge.</p>
+      <ul class="actions special project-actions"><li><a href="https://arievoapp.github.io/" class="button" target="_blank" rel="noopener noreferrer">Arievo website</a></li><li><a href="resume.html#arievo-experience" class="button">Engineering details</a></li></ul>
     </article>
     <section class="post client-suite" id="meti" aria-labelledby="meti-title">
       <header class="major">
@@ -107,9 +117,7 @@
           <p class="surface-meta">Built and published &middot; iOS &amp; Android</p>
           <ul class="tech-list" aria-label="Technologies"><li>React Native</li><li>Expo</li><li>TypeScript</li><li>Go APIs</li></ul>
           <ul class="project-points">
-            <li><strong>Built and published</strong> the METI Bills app on the App Store and Google Play.</li>
-            <li><strong>Invoicing on the go:</strong> invoice and credit-note forms with VAT calculations and document actions, integrated with the existing Go APIs.</li>
-            <li><strong>Self-billing:</strong> agricultural purchase-slip creation, shipped on mobile and web together.</li>
+            <li><strong>Built and published</strong> the iOS and Android app, including invoice and credit-note forms, VAT calculations and Go API integration.</li>
           </ul>
         </div>
         <div id="meti-bills-web">
@@ -117,14 +125,23 @@
           <p class="surface-meta">Extended the existing live product</p>
           <ul class="tech-list" aria-label="Technologies"><li>React</li><li>Go / Gin</li><li>PostgreSQL</li></ul>
           <ul class="project-points">
-            <li><strong>Billing correctness:</strong> fixed quarterly recurring invoices advancing after one month instead of three, and added five model/integration tests for the schedule calculation and database persistence.</li>
-            <li><strong>Document reliability:</strong> fixed PDF exports that failed on malformed embedded attachments, using base64 cleanup and a regeneration fallback; added bounded retries for HTTP 429/5xx uploads.</li>
-            <li><strong>Peppol validation:</strong> persisted validation feedback and an explicit invoice-update flow, including a fix for false-positive supplier configuration errors.</li>
-            <li><strong>Production support:</strong> traced user-reported defects in the live website across the Go APIs and PostgreSQL; added Go document transformations and stored user preferences for purchase slips.</li>
+            <li><strong>Billing correctness:</strong> fixed quarterly invoice scheduling and added five model/integration tests.</li>
+            <li><strong>Document workflows:</strong> improved PDF export reliability and delivered agricultural self-billing across mobile and web.</li>
           </ul>
         </div>
       </div>
-      <ul class="actions special project-actions"><li><a href="https://apps.apple.com/gb/app/meti-bills/id6766468995" class="button" target="_blank" rel="noopener noreferrer">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.metibills.mobile" class="button" target="_blank" rel="noopener noreferrer">Google Play</a></li><li><a href="https://meti-bills.com" class="button" target="_blank" rel="noopener noreferrer">Product website</a></li></ul>
+      <div class="app-screenshots" aria-label="METI Bills application screenshots">
+        <figure>
+          <a href="images/screenshots/metibills-sign-in.png" data-lightbox><img src="images/screenshots/metibills-sign-in.png" alt="METI Bills sign-in screen with empty email and password fields" width="810" height="1800" loading="lazy" decoding="async" /></a>
+          <figcaption>Sign-in screen</figcaption>
+        </figure>
+        <figure>
+          <a href="images/screenshots/metibills-dashboard.png" data-lightbox><img src="images/screenshots/metibills-dashboard.png" alt="METI Bills sales dashboard from its public Google Play listing" width="810" height="1800" loading="lazy" decoding="async" /></a>
+          <figcaption>Sales dashboard</figcaption>
+        </figure>
+      </div>
+      <p class="screenshot-note">Product screenshots from the <a href="https://play.google.com/store/apps/details?id=com.metibills.mobile" target="_blank" rel="noopener noreferrer">public Google Play listing</a>. Select an image to enlarge.</p>
+      <ul class="actions special project-actions"><li><a href="https://apps.apple.com/gb/app/meti-bills/id6766468995" class="button" target="_blank" rel="noopener noreferrer">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.metibills.mobile" class="button" target="_blank" rel="noopener noreferrer">Google Play</a></li><li><a href="https://meti-bills.com" class="button" target="_blank" rel="noopener noreferrer">Product website</a></li><li><a href="resume.html#meti-bills-experience" class="button">Engineering details</a></li></ul>
     </article>
     <article class="post product-panel" id="meti-box">
       <header class="major">
@@ -138,10 +155,8 @@
           <p class="surface-meta">Updated the existing iOS &amp; Android app</p>
           <ul class="tech-list" aria-label="Technologies"><li>Flutter</li><li>Dart</li><li>Dio</li><li>BLoC / Cubit</li></ul>
           <ul class="project-points">
-            <li><strong>API compatibility:</strong> repaired trash-response handling and ticket attachment uploads after backend changes.</li>
-            <li><strong>Regression-tested fixes:</strong> corrected scanned-PDF file paths and added regression tests.</li>
-            <li><strong>Everyday workflows:</strong> improved session startup, file search and the English/French UI.</li>
-            <li><strong>Release readiness:</strong> updated the Android build configuration and the iOS privacy manifest.</li>
+            <li><strong>API compatibility:</strong> repaired trash-response handling and ticket attachment uploads in the existing Flutter app.</li>
+            <li><strong>Mobile reliability:</strong> corrected scanned-PDF paths with regression tests and improved session startup and file search.</li>
           </ul>
         </div>
         <div id="meti-box-web">
@@ -149,22 +164,27 @@
           <p class="surface-meta">Maintained the existing live product</p>
           <ul class="tech-list" aria-label="Technologies"><li>PHP</li><li>Laravel</li><li>Livewire / Blade</li></ul>
           <ul class="project-points">
-            <li><strong>Archive workflows:</strong> corrected file-renaming validation and ZIP download handling, including unreadable storage streams.</li>
-            <li><strong>Mobile API compatibility:</strong> corrected archive ordering, file-restoration ownership checks and missing-ticket HTTP responses.</li>
-            <li><strong>Clearer user feedback:</strong> improved client/member deletion confirmations and added data-deletion information with privacy-page updates.</li>
+            <li><strong>Archive workflows:</strong> fixed file renaming, ZIP downloads, archive ordering and file-restoration ownership checks in Laravel.</li>
           </ul>
         </div>
       </div>
-      <ul class="actions special project-actions"><li><a href="https://apps.apple.com/gb/app/meti-box/id6738959871" class="button" target="_blank" rel="noopener noreferrer">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.metibox.mobile" class="button" target="_blank" rel="noopener noreferrer">Google Play</a></li><li><a href="https://www.meti-box.com" class="button" target="_blank" rel="noopener noreferrer">Product website</a></li></ul>
+      <div class="app-screenshots" aria-label="METI Box application screenshots">
+        <figure>
+          <a href="images/screenshots/metibox-archive.png" data-lightbox><img src="images/screenshots/metibox-archive.png" alt="METI Box archive showing document categories" width="810" height="1800" loading="lazy" decoding="async" /></a>
+          <figcaption>Document archive</figcaption>
+        </figure>
+        <figure>
+          <a href="images/screenshots/metibox-purchases.png" data-lightbox><img src="images/screenshots/metibox-purchases.png" alt="METI Box purchases organised into monthly folders" width="810" height="1800" loading="lazy" decoding="async" /></a>
+          <figcaption>Monthly purchase folders</figcaption>
+        </figure>
+      </div>
+      <p class="screenshot-note">Product screenshots from the <a href="https://play.google.com/store/apps/details?id=com.metibox.mobile" target="_blank" rel="noopener noreferrer">public Google Play listing</a>. Select an image to enlarge.</p>
+      <ul class="actions special project-actions"><li><a href="https://apps.apple.com/gb/app/meti-box/id6738959871" class="button" target="_blank" rel="noopener noreferrer">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.metibox.mobile" class="button" target="_blank" rel="noopener noreferrer">Google Play</a></li><li><a href="https://www.meti-box.com" class="button" target="_blank" rel="noopener noreferrer">Product website</a></li><li><a href="resume.html#meti-box-experience" class="button">Engineering details</a></li></ul>
     </article>
     <section class="post" aria-labelledby="background-title">
       <h2 id="background-title">Skills &amp; background</h2>
-      <dl class="skills-list">
-        <dt>Core stack</dt><dd>TypeScript, React Native, Expo, React, Go/Gin, PostgreSQL, Supabase</dd>
-        <dt>Also used professionally</dt><dd>SQL, REST APIs, Supabase Edge Functions, Python, Flutter/Dart, PHP/Laravel</dd>
-        <dt>Engineering practice</dt><dd>Offline sync, realtime subscriptions, row-level security, Go unit/integration tests, Git, App Store and Google Play releases</dd>
-        <dt>Education</dt><dd>MSc Computer Games Technology with VR, Distinction (City St George&rsquo;s, University of London, Global STEM Leadership Scholarship) &middot; BTech Computer Science and Engineering, CGPA 8.4/10 (Vellore Institute of Technology)</dd>
-      </dl>
+      <p>React Native, TypeScript, React, Go and PostgreSQL, with professional Flutter and Laravel experience. MSc with Distinction from City St George&rsquo;s, University of London.</p>
+      <p><a href="resume.html#skills-title">Full skills and education</a></p>
       <p>Before moving into mobile and full-stack work, I built games, graphics and XR projects in C++, C#, Unreal Engine and Unity, including a VR dissertation on physics-driven NPC interaction.</p>
       <ul class="actions special project-actions"><li><a href="games.html" class="button">Games &amp; graphics</a></li><li><a href="VRProjects.html" class="button">VR &amp; AR projects</a></li></ul>
     </section></main>

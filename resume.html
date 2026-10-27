@@ -25,7 +25,7 @@
     <section class="portfolio-intro" aria-labelledby="page-title">
       <p class="eyebrow">Sai Srikar Chirumarri &middot; London, UK</p>
       <h1 id="page-title">Experience &amp; CV</h1>
-      <p class="intro-lede">Professional experience at Arievo Limited and METI Concept SRL, technical skills and education. The downloadable PDF has the same content.</p>
+      <p class="intro-lede">Professional experience at Arievo Limited and METI Concept SRL, technical skills and education. Download the one-page CV for a concise summary.</p>
       <p class="availability"><span class="status-dot" aria-hidden="true"></span>Open to mobile and full-stack roles in London</p>
       <ul class="actions special project-actions"><li><a href="images/Sai-Srikar-Chirumarri-CV.pdf" class="button primary" download>Download CV (PDF)</a></li><li><a href="mailto:saisrikar2512@gmail.com" class="button">Email me</a></li><li><a href="https://www.linkedin.com/in/sai-srikar-c-0444a824b/" class="button" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></ul>
     </section>
@@ -41,7 +41,7 @@
       </section>
       <section id="experience" aria-labelledby="experience-title">
         <h2 id="experience-title">Professional experience</h2>
-        <div class="experience-entry">
+        <div class="experience-entry" id="arievo-experience">
           <header><h3>Founding Software Engineer</h3><p><strong>Arievo Limited</strong> &middot; July 2026 &ndash; present<br /> London, UK &middot; Remote &middot; External beta</p></header>
           <ul class="project-points"><li>As primary engineer, developed the React Native/Expo fitness app, including workout logging, partner matching and live group/social features in TypeScript.</li><li>Built offline workout logging with a persistent operation queue and sequential replay, plus realtime updates that recover after reconnection.</li><li>Implemented Supabase authentication, PostgreSQL row-level security policies and server-enforced content moderation using Edge Functions and a Python service.</li><li>Integrated push-notification workflows and distributed external beta builds through TestFlight and Google Play testing.</li></ul>
           <p><a href="https://arievoapp.github.io/" target="_blank" rel="noopener noreferrer">Arievo website</a></p>
@@ -49,10 +49,10 @@
         <div class="experience-entry">
           <header><h3>Software Developer (Contract)</h3><p><strong>METI Concept SRL</strong> &middot; February &ndash; June 2026<br /> Remote from London &middot; Belgian invoicing and accounting software</p></header>
           <p>Worked across two connected products, METI Bills (Peppol e-invoicing) and METI Box (accountant&ndash;client document exchange), on mobile, web and backend.</p>
-          <h4>METI Bills: mobile app (built and published), web app and Go backend</h4>
+          <h4 id="meti-bills-experience">METI Bills: mobile app (built and published), web app and Go backend</h4>
           <ul class="project-points"><li>Built and published METI Bills for iOS and Android with React Native, Expo and TypeScript, including invoice and credit-note forms, VAT calculations and Go API integration.</li><li>Fixed quarterly recurring-invoice schedules advancing after one month instead of three; added five model/integration tests covering scheduling and database persistence.</li><li>Enabled agricultural purchase-slip creation for self-billing across web and mobile, adding Go document transformations and database preferences.</li><li>Fixed PDF exports failing on malformed embedded attachments with base64 cleanup and a PDF-regeneration fallback; added bounded retries for HTTP 429/5xx uploads.</li><li>Extended the React website with persisted Peppol validation feedback and an explicit invoice-editing flow, and traced user-reported defects across Go APIs and PostgreSQL.</li></ul>
-          <h4>METI Box: Flutter app and Laravel web platform</h4>
-          <ul class="project-points"><li>Updated the existing Flutter app for API changes: fixed trash-response and ticket-attachment handling, added scanned-PDF path regression tests, and improved session startup, file search and English/French localisation.</li><li>Maintained the Laravel/Livewire website and its mobile APIs: corrected file-renaming validation, ZIP downloads, archive ordering, file-restoration ownership checks and deletion feedback.</li></ul>
+          <h4 id="meti-box-experience">METI Box: Flutter app and Laravel web platform</h4>
+          <ul class="project-points"><li>Updated the existing Flutter app for API changes: fixed trash-response and ticket-attachment handling, added scanned-PDF path regression tests, and improved session startup, file search and English/French localisation. Updated Android build configuration and the iOS privacy manifest.</li><li>Maintained the Laravel/Livewire website and its mobile APIs: corrected file-renaming validation, ZIP downloads, archive ordering, file-restoration ownership checks, missing-ticket HTTP responses and deletion feedback.</li></ul>
           <p><a href="index.html#meti">Project details</a> &middot; METI Bills: <a href="https://apps.apple.com/gb/app/meti-bills/id6766468995" target="_blank" rel="noopener noreferrer">App Store</a> / <a href="https://play.google.com/store/apps/details?id=com.metibills.mobile" target="_blank" rel="noopener noreferrer">Google Play</a> &middot; METI Box: <a href="https://apps.apple.com/gb/app/meti-box/id6738959871" target="_blank" rel="noopener noreferrer">App Store</a> / <a href="https://play.google.com/store/apps/details?id=com.metibox.mobile" target="_blank" rel="noopener noreferrer">Google Play</a></p>
         </div>
       </section>
