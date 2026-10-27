@@ -1,316 +1,197 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Sai Srikar Chirumarri Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Sai Srikar Chirumarri<br />
-						Portfolio</h1>
-						<p>Game Developer and Designer.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-
-						<section id="showreel">
-  							<h2>Showreel</h2>
-
-  							<div class="video-wrapper">
-    							<iframe
-  								width="560"
-  								height="315"
-  								src="https://youtube.com/embed/vvx2B15Jk3g"
-  								title="YouTube video player"
-  								frameborder="0"
-  								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  								allowfullscreen>
-								</iframe>
-  							</div>
-							</section>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Sai Srikar Chirumarri</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">3D and 2D Projects</a></li>
-							<li><a href="VRProjects.html">VR and AR Projects</a></li>
-							<li><a href="resume.html">Resume</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/sai-srikar-chirumarri-0444a824b/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/Foshhyd" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-<!-- Lightbox container -->
-<div id="lightbox" onclick="closeLightbox()">
-	<img id="lightbox-img">
-</div>
-
-<script>
-function openLightbox(img) {
-	document.getElementById("lightbox").style.display = "flex";
-	document.getElementById("lightbox-img").src = img.src;
-}
-function closeLightbox() {
-	document.getElementById("lightbox").style.display = "none";
-}
-</script>
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date"></span>
-									<h1>3D and 2D game projects</h1>
-									<h2>Shackled Shadow(Monogame C# Platformer Game) [Prototype]<br />
-									</a></h2>
-								</header>
-								<div class="row">
-  									<div class="column">
-    									</a><img src="images/CGA1.png" style="width:100%" onclick="openLightbox(this)">
-  									</div>
-  									<div class="column">
-    									</a><img src="images/CGA2.png" style="width:100%" onclick="openLightbox(this)">
- 									 </div>
-								</div>
-								<a class="image main"><img src="images/CGA3.png" alt="" onclick="openLightbox(this)" /></a>
-									<p>A shadow who escaped it's owner is looking for freedom. 
-										The game features two different worlds i.e., Shadow world and Real world. Travel between two worlds solving puzzles, fighting enemies with your powers. Explore the world and find your freedom
-									</p>
-								<p>I am the sole developer and designer of this game made with monogame. The game was built from scratch hence many game managers and systems needed to be coded they include</p>
-								<li>Start and End screen recording high scores and menu buttons.</li>
-								<li>An innovative game mechanic where art and enemy behavior switches when a power up is used.</li>
-								<li>Level design extracted from txt files(Txt file can be used to change player, enemy or tile positions)</li>
-								<li>Various power up drops with hit detection.</li>
-								<li>Enemy movement and finite state machines.</li>
-								<li>Input listeners, score managers.</li>
-								<ul class="actions special">
-										<li><a href="https://github.com/Foshhyd/ShackledShadow" target="_blank" class="button">View Project</a></li>
-									</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date"></span>
-										<h2>Planet Clearance(C++ Game plus custom engine)<br />
-										</a></h2>
-									</header>
-									<div class="row">
-  									<div class="column">
-    									</a><img src="images/AGT2.png" style="width:100%" onclick="openLightbox(this)">
-  									</div>
-  									<div class="column">
-    									</a><img src="images/AGT3.png" style="width:100%" onclick="openLightbox(this)">
- 									 </div>
-								</div>
-								<a class="image main"><img src="images/AGT1.png" alt="" onclick="openLightbox(this)" /></a>
-									<p>Third person shooter- Humanity is extending its power over the galaxy and starts conquering other planets inhabited by aliens. A space agent is assigned the task of cleaning planets for humans. 
-										You land on a planet where aliens are hidden and have the power to teleport. This planet also has valuable gemstones that help humans to kill aliens of this planet.
-									</p>
-								<p>I am the sole developer and designer of this game made with a custom game engine. The game and the engine was built on a basic template items that I coded</p>
-								<li>Game intro screen using a quad constructed with OpenGL</li>
-								<li>A primitive tetrahedron object made with C++ and OpenGL from scratch with computed vertices, normals and tex co-ordinates</li>
-								<li>Use of audio files using a FMod file manager</li>
-								<li>A 3rd person camera motion that tracks player. Powerups.</li>
-								<li>Special effects like fog, crossfade, explosion, UI elements</li>
-								<li>NPC finite state machine with 4 different states.</li>
-								<li>Input listeners, score managers.</li>
-								<ul class="actions special">
-										<li><a href="https://github.com/Foshhyd/PlanetClearance" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date"></span>
-										<h2>OpenGL engine and a basic game(C++ VS project with game)<br />
-										</a></h2>
-									</header>
-									<div class="row">
-  									<div class="column">
-    									</a><img src="images/CG2.png" style="width:100%" onclick="openLightbox(this)">
-  									</div>
-  									<div class="column">
-    									</a><img src="images/CG3.png" style="width:100%" onclick="openLightbox(this)">
- 									 </div>
-								</div>
-								<a class="image main"><img src="images/CG1.png" alt="" onclick="openLightbox(this)" /></a>
-									<p>Completely custom OpenGL engine with custom shaders, and a 3D submarine game where the player needs to collect gems in an underwater track. These pickups give player points. 
-									</p>
-								<p>I am the sole developer and designer of this game made with a custom game engine. Features include</p>
-								<li>A 3D non linear path was created using Catmull Rom.</li>
-								<li>A primitive tetrahedron and cylinder object made with C++ and OpenGL from scratch with computed vertices, normals and tex co-ordinates</li>
-								<li>Directional light and spotlight with custom shaders.</li>
-								<li>Advanced rendering techniques- Reflect and refract shaders, A Toon shader, Emissive shader, A blue tint shader made with Frame buffer objects.</li>
-								<ul class="actions special">
-										<li><a href="https://github.com/Foshhyd/TidalGame" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date"></span>
-										<h2>Deception(Unreal engine, C++) [Prototype]<br />
-										</a></h2>
-									</header>
-									<div class="row">
-  									<div class="column">
-    									</a><img src="images/GDP2.png" style="width:100%" onclick="openLightbox(this)">
-  									</div>
-  									<div class="column">
-    									</a><img src="images/GDP3.png" style="width:100%" onclick="openLightbox(this)">
- 									 </div>
-								</div>
-								<a class="image main"><img src="images/GDP1.png" alt="" onclick="openLightbox(this)" /></a>
-									<p>Deception: a game about the psyche behind people’s lies. 
-										As a robot, you are given the task to explore the environments they live in. Interacting with various storylines and influencing the main story. In a way, you can write your own story with all the intriguing elements built in for you. 
-									</p>
-								<p>I am the sole developer of this game made using unreal marketplace 3D assets. Features include</p>
-								<li>A dynamic conversation system using data table and blueprints. The dialogue changes depending on player choices and the story path changes.</li>
-								<li>Fast travel between different locations on the map. A sequence that implements a custom cinematic camera animation.</li>
-								<li>A mission system that uses collision detection and updates player goals.</li>
-								<ul class="actions special">
-										<li><a href="https://github.com/Foshhyd/Deception" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date"></span>
-										<h2>Dimentional crack(Unity C#) [Prototype]<br />
-										</a></h2>
-									</header>
-									<a class="image main"><img src="images/pic01.png" alt="" onclick="openLightbox(this)" /></a>
-									<p>An Action-Adventure mobile game where a crack in reality leads to a different dimention where aliens constantly attack you to not fill the crack. Solve the puzzles and close the crack before realities merge.
-									</p>
-								<p>I am the sole developer of this game made in Unity using online 3d assets. Features include</p>
-								<li>An inventory system for solving puzzles and interacting with objects in scene.</li>
-								<li>Animation system to implement 3d models movement.</li>
-								<li>Enemy AI and teleportion of enemy after player hit.</li>
-								<ul class="actions special">
-										<li><a href="https://github.com/Foshhyd/SD" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date"></span>
-										<h2>Simple Shooter(Unreal C++)<br />
-										Game made while learning unreal Udmey course</a></h2>
-									</header>
-									<a class="image main"><img src="images/SS.jpg" alt="" onclick="openLightbox(this)" /></a>
-									<p>A mini project part of Udemy certification. The main aspects learned.</p>
-									<li>Enemy AI behavior trees and blackboard to follow and attack the player when in visible distance.</li>
-									<li>Player and shooting game mechanics.</li>
-									<li>Player and enemy animation state machines.</li>
-									<li>UI, health component and level management.</li>
-									<ul class="actions special">
-										<li><a href="https://drive.google.com/drive/folders/1Ay3tyQC30s7u6wXKy01hy06n_w_4Lqrd?usp=sharing" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date"></span>
-										<h2>Unreal Engine 5 C++ certification<br />
-										</a></h2>
-									</header>
-									<a href="images/GameDevelopCertificate.pdf" target="_blank" class="image fit"><img src="images/unrealcertification.png" alt="" /></a>
-									<p></p>
-									<ul class="actions special">
-										<li><a href="https://www.udemy.com/course/unrealcourse/" target="_blank" class="button">View Course</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date"></span>
-										<h2>Data Structures and OOP with C++ certification<br />
-										</a></h2>
-									</header>
-									<a href="images/C++Datastructures certification.pdf" target="_blank" class="image fit"><img src="images/C++Datastructures certification.png" alt="" /></a>
-									<p></p>
-									<ul class="actions special">
-										<li><a href="https://www.udemy.com/course/data-structures-cpp/" target="_blank" class="button">View Course</a></li>
-									</ul>
-								</article>
-							</section>
-
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<!--<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>-->
-								</div>
-							</footer>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3></h3>
-								<p><br />
-								</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a>+44 7553859988</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:saisrikar2512@gmail.com">saisrikar2512@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/sai-srikar-chirumarri-0444a824b/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/Foshhyd" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; </li><!--<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>--></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<!-- Massively by HTML5 UP | html5up.net | CCA 3.0 (html5up.net/license) -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sai Srikar Chirumarri, London-based mobile and full-stack engineer. React Native, Expo and TypeScript apps backed by Go, PostgreSQL and Supabase. Built and published METI Bills; founding engineer at Arievo." />
+  <title>Sai Srikar Chirumarri | Mobile &amp; Full-Stack Software Engineer</title>
+  <link rel="canonical" href="https://foshhyd.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sai Srikar Chirumarri" />
+  <meta property="og:title" content="Sai Srikar Chirumarri | Mobile &amp; Full-Stack Software Engineer" />
+  <meta property="og:description" content="Sai Srikar Chirumarri, London-based mobile and full-stack engineer. React Native, Expo and TypeScript apps backed by Go, PostgreSQL and Supabase. Built and published METI Bills; founding engineer at Arievo." />
+  <meta property="og:url" content="https://foshhyd.github.io/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
+  <noscript><style>#wrapper{background:#212931 url(images/bg.png) center top/cover}#wrapper.fade-in::before{display:none}#nav{display:flex!important;height:auto!important}#nav .links{flex-wrap:wrap}#nav .icons{display:none}</style></noscript>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sai Srikar Chirumarri",
+    "jobTitle": "Mobile & Full-Stack Software Engineer",
+    "url": "https://foshhyd.github.io/",
+    "email": "mailto:saisrikar2512@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "City St George's, University of London" },
+      { "@type": "CollegeOrUniversity", "name": "Vellore Institute of Technology" }
+    ],
+    "knowsAbout": ["React Native", "Expo", "TypeScript", "React", "Go", "PostgreSQL", "Supabase"],
+    "sameAs": ["https://www.linkedin.com/in/sai-srikar-c-0444a824b/", "https://github.com/Foshhyd"]
+  }
+  </script>
+</head>
+<body class="is-preload portfolio-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="wrapper" class="fade-in">
+    <header id="header"><a href="index.html" class="logo">Sai Srikar Chirumarri</a></header>
+    <section class="portfolio-intro" aria-labelledby="page-title">
+      <p class="eyebrow">Sai Srikar Chirumarri &middot; London, UK</p>
+      <h1 id="page-title">Mobile &amp; full-stack<br />software engineer</h1>
+      <p class="intro-lede">I build React Native apps in TypeScript, backed by Go APIs, PostgreSQL and Supabase. I built and published METI Bills on the App Store and Google Play, and I am the founding engineer on Arievo, a fitness app in external beta.</p>
+      <p class="availability"><span class="status-dot" aria-hidden="true"></span>Open to mobile and full-stack roles in London</p>
+      <ul class="actions special project-actions"><li><a href="#mobile-work" class="button primary">View my work</a></li><li><a href="images/Sai-Srikar-Chirumarri-CV.pdf" class="button" download>Download CV</a></li><li><a href="mailto:saisrikar2512@gmail.com" class="button">Email me</a></li></ul>
+    </section>
+    <nav id="nav" aria-label="Main navigation"><ul class="links"><li class="active"><a href="index.html" aria-current="page">Work</a></li><li><a href="resume.html">Experience &amp; CV</a></li><li><a href="games.html">Games</a></li><li><a href="VRProjects.html">VR &amp; AR</a></li></ul><ul class="icons">
+      <li><a href="https://www.linkedin.com/in/sai-srikar-c-0444a824b/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/Foshhyd" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+    </ul></nav>
+    <main id="main" tabindex="-1">
+    <section class="post at-a-glance" aria-labelledby="glance-title">
+      <h2 id="glance-title" class="glance-heading">At a glance</h2>
+      <dl class="glance-grid">
+        <div><dt>Shipped</dt><dd><a href="#meti-bills">METI Bills</a>, live on the App Store and Google Play, plus mobile and web work on its sister product <a href="#meti-box">METI Box</a></dd></div>
+        <div><dt>Building</dt><dd>Arievo: primary engineer on the iOS and Android fitness app, now in external beta</dd></div>
+        <div><dt>Core stack</dt><dd>React Native, Expo, TypeScript, React, Go/Gin, PostgreSQL, Supabase</dd></div>
+        <div><dt>Education</dt><dd>MSc with Distinction, City St George&rsquo;s, University of London (scholarship)</dd></div>
+      </dl>
+    </section>
+    <article class="post featured" id="mobile-work">
+      <header class="major">
+        <p class="project-meta">Current role &middot; July 2026 &ndash; present</p>
+        <img class="app-icon" src="images/arievo-app-icon.png" alt="Arievo app icon" width="96" height="96" />
+        <h2>Arievo</h2>
+        <p class="project-role">Founding Software Engineer &middot; Arievo Limited &middot; External beta</p>
+      </header>
+      <p>As the primary engineer, I develop Arievo&rsquo;s React Native/Expo fitness app: workout logging, partner matching, and live group and social features, written in TypeScript on a Supabase and PostgreSQL backend.</p>
+      <ul class="tech-list" aria-label="Technologies"><li>React Native</li><li>Expo</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>Edge Functions</li><li>Python</li></ul>
+      <ul class="project-points">
+        <li><strong>Offline workout logging:</strong> sets can be logged without a connection. Each change goes into a persistent operation queue and is replayed in order on reconnection, and realtime updates recover once the device is back online.</li>
+        <li><strong>Data access at the database layer:</strong> Supabase authentication plus PostgreSQL row-level security policies, so access to workout data is enforced by the database rather than trusted to the client.</li>
+        <li><strong>Server-enforced moderation:</strong> content approvals run in Supabase Edge Functions and a Python service, checked against both the user and the submitted content.</li>
+        <li><strong>Releases:</strong> integrated push-notification workflows and distribute iOS and Android beta builds through TestFlight and Google Play testing.</li>
+      </ul>
+      <ul class="actions special project-actions"><li><a href="https://arievoapp.github.io/" class="button" target="_blank" rel="noopener noreferrer">Arievo website</a></li><li><a href="resume.html#experience" class="button">Full experience</a></li></ul>
+    </article>
+    <section class="post client-suite" id="meti" aria-labelledby="meti-title">
+      <header class="major">
+        <p class="project-meta">Contract &middot; February &ndash; June 2026 &middot; Remote from London</p>
+        <h2 id="meti-title">METI Concept SRL</h2>
+        <p class="project-role">Software Developer (Contract) &middot; Belgian invoicing and accounting software</p>
+      </header>
+      <p>METI Concept builds two connected products for Belgian businesses and their accountants: <strong>METI Bills</strong>, a Peppol e-invoicing platform, and <strong>METI Box</strong>, a document-exchange platform between accountants and their clients. Invoices from METI Bills can be sent straight to the accountant&rsquo;s METI Box. I worked across both products, on mobile, web and backend, in TypeScript, Go, Dart and PHP.</p>
+      <div class="table-wrapper suite-matrix">
+        <table>
+          <caption>My contribution by product and layer</caption>
+          <thead><tr><th scope="col">Product</th><th scope="col">Mobile app</th><th scope="col">Web app</th><th scope="col">Backend &amp; APIs</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><a href="#meti-bills">METI Bills</a></th><td><strong>Built &amp; published</strong><span>React Native, Expo</span></td><td><strong>Extended</strong><span>React</span></td><td><strong>Extended</strong><span>Go/Gin, PostgreSQL</span></td></tr>
+            <tr><th scope="row"><a href="#meti-box">METI Box</a></th><td><strong>Updated</strong><span>Flutter, Dart</span></td><td><strong>Maintained</strong><span>Laravel, Livewire</span></td><td><strong>Fixed</strong><span>Laravel APIs for the app</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <article class="post product-panel" id="meti-bills">
+      <header class="major">
+        <img class="app-icon" src="images/metibills-app-icon.png" alt="METI Bills app icon" width="80" height="80" />
+        <h2>METI Bills</h2>
+        <p class="project-role">Peppol e-invoicing for Belgian businesses: invoices, credit notes, quotes and recurring billing, with bank reconciliation and export to the accountant&rsquo;s METI Box.</p>
+      </header>
+      <div class="surface-grid">
+        <div id="meti-bills-mobile">
+          <h3>Mobile app</h3>
+          <p class="surface-meta">Built and published &middot; iOS &amp; Android</p>
+          <ul class="tech-list" aria-label="Technologies"><li>React Native</li><li>Expo</li><li>TypeScript</li><li>Go APIs</li></ul>
+          <ul class="project-points">
+            <li><strong>Built and published</strong> the METI Bills app on the App Store and Google Play.</li>
+            <li><strong>Invoicing on the go:</strong> invoice and credit-note forms with VAT calculations and document actions, integrated with the existing Go APIs.</li>
+            <li><strong>Self-billing:</strong> agricultural purchase-slip creation, shipped on mobile and web together.</li>
+          </ul>
+        </div>
+        <div id="meti-bills-web">
+          <h3>Web app &amp; backend</h3>
+          <p class="surface-meta">Extended the existing live product</p>
+          <ul class="tech-list" aria-label="Technologies"><li>React</li><li>Go / Gin</li><li>PostgreSQL</li></ul>
+          <ul class="project-points">
+            <li><strong>Billing correctness:</strong> fixed quarterly recurring invoices advancing after one month instead of three, and added five model/integration tests for the schedule calculation and database persistence.</li>
+            <li><strong>Document reliability:</strong> fixed PDF exports that failed on malformed embedded attachments, using base64 cleanup and a regeneration fallback; added bounded retries for HTTP 429/5xx uploads.</li>
+            <li><strong>Peppol validation:</strong> persisted validation feedback and an explicit invoice-update flow, including a fix for false-positive supplier configuration errors.</li>
+            <li><strong>Production support:</strong> traced user-reported defects in the live website across the Go APIs and PostgreSQL; added Go document transformations and stored user preferences for purchase slips.</li>
+          </ul>
+        </div>
+      </div>
+      <ul class="actions special project-actions"><li><a href="https://apps.apple.com/gb/app/meti-bills/id6766468995" class="button" target="_blank" rel="noopener noreferrer">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.metibills.mobile" class="button" target="_blank" rel="noopener noreferrer">Google Play</a></li><li><a href="https://meti-bills.com" class="button" target="_blank" rel="noopener noreferrer">Product website</a></li></ul>
+    </article>
+    <article class="post product-panel" id="meti-box">
+      <header class="major">
+        <img class="app-icon wordmark" src="images/metibox-logo.png" alt="METI Box logo" width="160" height="80" />
+        <h2>METI Box</h2>
+        <p class="project-role">Document exchange between accountants and their clients: scanning, uploads, shared archives and messaging, on mobile and web.</p>
+      </header>
+      <div class="surface-grid">
+        <div id="meti-box-mobile">
+          <h3>Mobile app</h3>
+          <p class="surface-meta">Updated the existing iOS &amp; Android app</p>
+          <ul class="tech-list" aria-label="Technologies"><li>Flutter</li><li>Dart</li><li>Dio</li><li>BLoC / Cubit</li></ul>
+          <ul class="project-points">
+            <li><strong>API compatibility:</strong> repaired trash-response handling and ticket attachment uploads after backend changes.</li>
+            <li><strong>Regression-tested fixes:</strong> corrected scanned-PDF file paths and added regression tests.</li>
+            <li><strong>Everyday workflows:</strong> improved session startup, file search and the English/French UI.</li>
+            <li><strong>Release readiness:</strong> updated the Android build configuration and the iOS privacy manifest.</li>
+          </ul>
+        </div>
+        <div id="meti-box-web">
+          <h3>Web platform &amp; APIs</h3>
+          <p class="surface-meta">Maintained the existing live product</p>
+          <ul class="tech-list" aria-label="Technologies"><li>PHP</li><li>Laravel</li><li>Livewire / Blade</li></ul>
+          <ul class="project-points">
+            <li><strong>Archive workflows:</strong> corrected file-renaming validation and ZIP download handling, including unreadable storage streams.</li>
+            <li><strong>Mobile API compatibility:</strong> corrected archive ordering, file-restoration ownership checks and missing-ticket HTTP responses.</li>
+            <li><strong>Clearer user feedback:</strong> improved client/member deletion confirmations and added data-deletion information with privacy-page updates.</li>
+          </ul>
+        </div>
+      </div>
+      <ul class="actions special project-actions"><li><a href="https://apps.apple.com/gb/app/meti-box/id6738959871" class="button" target="_blank" rel="noopener noreferrer">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.metibox.mobile" class="button" target="_blank" rel="noopener noreferrer">Google Play</a></li><li><a href="https://www.meti-box.com" class="button" target="_blank" rel="noopener noreferrer">Product website</a></li></ul>
+    </article>
+    <section class="post" aria-labelledby="background-title">
+      <h2 id="background-title">Skills &amp; background</h2>
+      <dl class="skills-list">
+        <dt>Core stack</dt><dd>TypeScript, React Native, Expo, React, Go/Gin, PostgreSQL, Supabase</dd>
+        <dt>Also used professionally</dt><dd>SQL, REST APIs, Supabase Edge Functions, Python, Flutter/Dart, PHP/Laravel</dd>
+        <dt>Engineering practice</dt><dd>Offline sync, realtime subscriptions, row-level security, Go unit/integration tests, Git, App Store and Google Play releases</dd>
+        <dt>Education</dt><dd>MSc Computer Games Technology with VR, Distinction (City St George&rsquo;s, University of London, Global STEM Leadership Scholarship) &middot; BTech Computer Science and Engineering, CGPA 8.4/10 (Vellore Institute of Technology)</dd>
+      </dl>
+      <p>Before moving into mobile and full-stack work, I built games, graphics and XR projects in C++, C#, Unreal Engine and Unity, including a VR dissertation on physics-driven NPC interaction.</p>
+      <ul class="actions special project-actions"><li><a href="games.html" class="button">Games &amp; graphics</a></li><li><a href="VRProjects.html" class="button">VR &amp; AR projects</a></li></ul>
+    </section></main>
+    <footer id="footer">
+      <section class="split contact">
+        <section><h3>Based in</h3><p>London, UK</p></section>
+        <section><h3>Email</h3><p><a href="mailto:saisrikar2512@gmail.com">saisrikar2512@gmail.com</a></p></section>
+        <section><h3>Phone</h3><p><a href="tel:+447553859988">+44 7553 859988</a></p></section>
+        <section><h3>Connect</h3><ul class="icons">
+      <li><a href="https://www.linkedin.com/in/sai-srikar-c-0444a824b/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/Foshhyd" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+    </ul></section>
+      </section>
+    </footer>
+    <div id="copyright"><ul><li>&copy; Sai Srikar Chirumarri</li><li>Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li></ul></div>
+  </div>
+  <dialog id="project-lightbox" aria-label="Project image preview">
+    <button class="lightbox-close" type="button" aria-label="Close image preview">Close &times;</button>
+    <img src="images/bg.png" alt="" />
+  </dialog>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+</body>
 </html>
